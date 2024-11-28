@@ -10,7 +10,7 @@ st.set_page_config(page_title="Seating Arrangement", layout="wide", initial_side
 st.markdown(f"""
     <style>
     body {{
-        background-image: url("examseating/examseating/image.jpg", "rb").read()).decode()}");
+        background-image:url("data:image/jpg;base64,{base64.b64encode(open('', "rb").read()).decode()}");
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
