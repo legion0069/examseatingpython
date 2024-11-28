@@ -1,16 +1,18 @@
 import streamlit as st
 import pandas as pd
+import base64
 import random
 from io import StringIO
 
 # Page configuration
 st.set_page_config(page_title="Seating Arrangement", layout="wide", initial_sidebar_state="expanded")
-
+with open(background_image_path, "rb") as img_file:
+    base64_string = base64.b64encode(img_file.read()).decode()
 # Custom CSS for styling
 st.markdown(f"""
     <style>
     body {{
-        background-image:url("data:image/jpg;base64,{base64.b64encode(open('examseating/examseating/image.jpg', "rb").read()).decode()}");
+        background-image: url("data:image/jpg;base64,{base64_string}");
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
