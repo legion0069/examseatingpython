@@ -7,49 +7,29 @@ from io import StringIO
 st.set_page_config(page_title="Seating Arrangement", layout="wide", initial_sidebar_state="expanded")
 
 # Custom CSS for styling
-st.markdown("""
+st.markdown(f"""
     <style>
-    body {
-        background-color: #f5f5f5;
-    }
-    .stApp {
+    body {{
+        background-image: url("data:image/jpg;base64,{base64.b64encode(open('path_to_your_image.jpg', "rb").read()).decode()}");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }}
+    .stApp {{
         font-family: 'Arial', sans-serif;
-    }
-    .header {
-        background-color: #4CAF50;
+        background-color: rgba(255, 255, 255, 0.8); /* Optional: Add a white overlay for better readability */
+        border-radius: 10px;
+        padding: 10px;
+    }}
+    .header {{
+        background-color: rgba(0, 150, 136, 0.8); /* Adjust opacity for overlay effect */
         color: white;
         padding: 20px;
         text-align: center;
         font-size: 24px;
         border-radius: 10px;
         margin-bottom: 20px;
-    }
-    .section-title {
-        color: #333333;
-        font-weight: bold;
-        font-size: 20px;
-        margin-top: 20px;
-    }
-    .room-card {
-        background-color: #ffffff;
-        border: 1px solid #dddddd;
-        border-radius: 10px;
-        padding: 20px;
-        margin-bottom: 20px;
-        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    }
-    .highlight {
-        background-color: #FFEB3B;  /* Yellow background for highlight */
-        font-weight: bold;
-        color: #000000;
-    }
-    .footer {
-        margin-top: 30px;
-        padding: 10px;
-        text-align: center;
-        font-size: 14px;
-        color: #777777;
-    }
+    }}
     </style>
 """, unsafe_allow_html=True)
 
