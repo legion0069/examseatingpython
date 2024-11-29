@@ -16,7 +16,7 @@ st.markdown(f"""
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
-        color: black;
+        
     }}
     .stApp {{
         font-family: 'Arial', sans-serif;
