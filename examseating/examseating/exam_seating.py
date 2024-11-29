@@ -25,7 +25,7 @@ st.markdown(f"""
     }}
     .header {{
         background-color: rgba(0, 150, 136, 0.8); /* Adjust opacity for overlay effect */
-        color: white;
+        color: black;
         padding: 20px;
         text-align: center;
         font-size: 24px;
