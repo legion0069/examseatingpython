@@ -23,7 +23,7 @@ st.markdown(f"""
         background-color: rgba(255, 255, 255, 0.8); /* Optional: Add a white overlay for better readability */
         border-radius: 10px;
         padding: 10px;
-        
+        color: black;
     }}
     .header {{
         background-color: rgba(0, 150, 136, 0.8); /* Adjust opacity for overlay effect */
