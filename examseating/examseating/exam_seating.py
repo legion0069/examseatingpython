@@ -16,16 +16,18 @@ st.markdown(f"""
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
+        color: black;
     }}
     .stApp {{
         font-family: 'Arial', sans-serif;
         background-color: rgba(255, 255, 255, 0.8); /* Optional: Add a white overlay for better readability */
         border-radius: 10px;
         padding: 10px;
+        
     }}
     .header {{
         background-color: rgba(0, 150, 136, 0.8); /* Adjust opacity for overlay effect */
-        color: black;
+        color: white;
         padding: 20px;
         text-align: center;
         font-size: 24px;
