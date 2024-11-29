@@ -35,7 +35,33 @@ st.markdown(f"""
         font-size: 24px;
         border-radius: 10px;
         margin-bottom: 20px;
-    }}
+    }
+    .section-title {
+        color: #333333;
+        font-weight: bold;
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    .room-card {
+        background-color: #ffffff;
+        border: 1px solid #dddddd;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    .highlight {
+        background-color: #FFEB3B;  /* Yellow background for highlight */
+        font-weight: bold;
+        color: #000000;
+    }
+    .footer {
+        margin-top: 30px;
+        padding: 10px;
+        text-align: center;
+        font-size: 14px;
+        color: #777777;
+    }
     </style>
 """, unsafe_allow_html=True)
 
