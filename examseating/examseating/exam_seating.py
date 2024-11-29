@@ -13,6 +13,8 @@ st.markdown(f"""
     <style>
     body {{
         background-image: url("data:image/jpg;base64,{base64_string}");
+        background-color: #f5f5f5; /* Light background */
+        color: black; 
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
